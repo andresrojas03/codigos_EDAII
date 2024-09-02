@@ -7,8 +7,8 @@ def CreaLista(k):
 #Algoritmo de Ordenamiento
 
 def CountingSort(A, k): #A es la lista y k es el valor máximo de la lista
-  C = CreaLista()
-  B = CreaLista()
+  C = CreaLista(k)
+  B = CreaLista(len(A)-1)
   for j in range(1, len(A)):
     C[A[j]] = C[A[j]]+1
   for i in range(1, k+1):
